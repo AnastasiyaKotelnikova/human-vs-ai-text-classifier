@@ -7,17 +7,18 @@ This project focuses on classifying text samples as either **human-written** or 
 - **Dataset**: 5,000 balanced samples (2,500 human-written and 2,500 AI-generated) — *custom-collected and created by the author for this project*
 - **Models Trained**: Logistic Regression, Random Forest, Naive Bayes, Calibrated Linear SVC
 - **Text Preprocessing**: Lowercasing, punctuation cleanup, and TF-IDF vectorization
-- **Evaluation**: Confusion Matrix, ROC Curve comparisons, Accuracy Scores
-- **Visualizations**: Word Clouds, Model Accuracy Bar Charts, ROC Curve Comparisons
-- **Output**: Trained model saved to `model/text_classifier_5000.joblib`
+- **Evaluation Metrics**: Confusion Matrices, ROC Curves, AUC Scores, Classification Reports
+- **Visualizations**: Word Clouds, Model Accuracy Bar Charts, ROC Curve Comparisons, Feature Importance
+- **Output**: Saved model with `joblib` in `/model/text_classifier_5000.joblib`
 
 ## Results
 
-- **Logistic Regression** achieved **100% test accuracy**, followed closely by Calibrated Linear SVC, Naive Bayes, and Random Forest.
-- Visual analyses including ROC curves and top predictive words confirmed strong performance.
-- The dataset’s clear distinction between classes enabled very high precision without overfitting.
+- **Logistic Regression** achieved **100% test accuracy**, followed closely by Calibrated Linear SVC (0.998), Naive Bayes (0.997), and Random Forest (0.992).
+- **Feature Importance**: TF-IDF weights revealed words most indicative of AI vs. human writing.
+- **ROC Curves & AUC Scores** validated model separability and classification power.
+- **Classification Reports** confirmed high precision, recall, and F1-scores across all models.
 
- *Note: The perfect accuracy stems from high separability in the dataset and strong TF-IDF features. This project is meant for educational and experimental purposes.*
+ *Note: Perfect accuracy reflects the high separability of the dataset and strong TF-IDF features. The project is designed for educational and experimental exploration._
 
 ---
 
