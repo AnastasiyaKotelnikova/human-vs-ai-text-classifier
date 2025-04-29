@@ -1,0 +1,22 @@
+Model Name: text_classifier_5000.joblib
+Training Data: 5000 samples (balanced 50% class 0, 50% class 1)
+Preprocessing:
+- Lowercased all text
+- Removed special characters except basic punctuation
+- Removed extra spaces
+
+Model Pipeline:
+- TfidfVectorizer (default settings)
+- LogisticRegression (default settings)
+
+Train/Test Split:
+- 80% training (4000 samples)
+- 20% testing (1000 samples)
+- Random state: 42
+
+Performance:
+- Train Accuracy: 1.00
+- Test Accuracy: 1.00
+
+Date Created: April 28, 2025
+Created By: Anastasiya Kotelnikova
