@@ -1,18 +1,48 @@
-Human vs AI Custom Dataset
-This project focuses on classifying text samples as either human-written or AI-generated using a custom-built dataset. By combining machine learning models with TF-IDF vectorization, the project successfully detects subtle differences in writing styles and structures.
+# Human vs AI Text Classifier
 
-Key Features
-Dataset: 5,000 custom-collected and balanced text samples (Human vs AI).
+This project focuses on classifying text samples as either **human-written** or **AI-generated** using a custom-built dataset. By combining multiple machine learning models with TF-IDF vectorization, it successfully detects subtle differences in writing styles and structures.
 
-Models Trained: Logistic Regression, Random Forest, Naive Bayes, and Calibrated Linear SVC.
+## Key Features
 
-Text Processing: Lowercasing, punctuation cleanup, and TF-IDF feature extraction.
+- **Dataset**: 5,000 balanced samples (2,500 human-written and 2,500 AI-generated)
+- **Models Trained**: Logistic Regression, Random Forest, Naive Bayes, Calibrated Linear SVC
+- **Text Preprocessing**: Lowercasing, punctuation cleanup, and TF-IDF vectorization
+- **Evaluation**: Confusion Matrix, ROC Curve comparisons, Accuracy Scores
+- **Visualizations**: Word Clouds, Model Accuracy Bar Charts, ROC Curve Comparisons
+- **Output**: Trained model saved to `model/text_classifier_5000.joblib`
 
-Evaluation Metrics: Confusion Matrix, ROC Curve Comparisons, and Model Accuracy Scores.
+## Results
 
-Visualizations: Word Clouds for each class, Accuracy Bar Charts, and ROC Curves for all models.
+- **Logistic Regression** achieved **100% test accuracy**, followed closely by Calibrated Linear SVC, Naive Bayes, and Random Forest.
+- Visual analyses including ROC curves and top predictive words confirmed strong performance.
+- The dataset’s clear distinction between classes enabled very high precision without overfitting.
 
-Results
-The Logistic Regression model achieved the highest test accuracy of 100%, followed closely by Linear SVC, Naive Bayes, and Random Forest. Visual analyses such as ROC curves and feature importance further validated the strong model performance. The final trained model has been saved for future deployment.
+ *Note: The perfect accuracy stems from high separability in the dataset and strong TF-IDF features. This project is meant for educational and experimental purposes.*
 
-Note: The 100% test accuracy achieved by the Logistic Regression model is due to the strong separability between human and AI-generated texts in the custom dataset. Text cleaning and TF-IDF vectorization further enhanced feature extraction, enabling the models to perform with very high precision without overfitting.
+---
+
+## Project Structure
+```
+HUMAN_VS_AI_CUSTOM/
+│
+├── data/
+│   └── your_dataset_5000.csv
+│
+├── model/
+│   ├── model_info.txt
+│   └── text_classifier_5000.joblib
+│
+├── notebooks/
+│   ├── Human vs AI Custom Dataset.ipynb
+│   └── human_vs_ai_text_classifier.ipynb
+│
+├── requirements.txt
+└── README.md
+```
+
+## Author
+
+**Anastasiya Kotelnikova**  
+MS Data Science Candidate | NJIT  
+Email: [anastasiyakotelnikova21@gmail.com](mailto:anastasiyakotelnikova21@gmail.com)  
+[GitHub Profile](https://github.com/AnastasiyaKotelnikova) • [Portfolio Website](https://anastasiyakotelnikova.github.io/Portfolio/) • [LinkedIn](https://www.linkedin.com/in/anastasiyakotelnikova/)
