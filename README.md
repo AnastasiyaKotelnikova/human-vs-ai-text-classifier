@@ -4,7 +4,7 @@ This project focuses on classifying text samples as either **human-written** or 
 
 ## Key Features
 
-- **Dataset**: 5,000 balanced samples (2,500 human-written and 2,500 AI-generated)
+- **Dataset**: 5,000 balanced samples (2,500 human-written and 2,500 AI-generated) — *custom-collected and created by the author for this project*
 - **Models Trained**: Logistic Regression, Random Forest, Naive Bayes, Calibrated Linear SVC
 - **Text Preprocessing**: Lowercasing, punctuation cleanup, and TF-IDF vectorization
 - **Evaluation**: Confusion Matrix, ROC Curve comparisons, Accuracy Scores
