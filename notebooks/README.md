@@ -50,6 +50,7 @@ This project builds a binary text classification system to distinguish between *
 
 ## Project Structure
 
+```
 HUMAN_VS_AI_CUSTOM/
 ├── data/
 │   └── your_dataset_5000.csv             # Final cleaned and labeled dataset (2,500 Human + 2,500 AI samples)
@@ -61,4 +62,4 @@ HUMAN_VS_AI_CUSTOM/
 │   └── human_vs_ai_text_classifier.ipynb # Optional/experimental version or backup notebook
 ├── requirements.txt                      # Python libraries used in the project
 └── README.md                             # Project overview and instructions
-
+```
