@@ -1,24 +1,50 @@
 # Human vs AI Text Classifier
 
-This project focuses on classifying text samples as either **human-written** or **AI-generated** using a custom-built dataset. By combining multiple machine learning models with TF-IDF vectorization, it successfully detects subtle differences in writing styles and structures.
+This project builds a binary text classification system to distinguish between **human-written** and **AI-generated** text using a custom-labeled dataset. By combining **TF-IDF vectorization** with multiple machine learning models, it captures subtle linguistic patterns and style differences across writing sources.
 
-## Key Features
+---
 
-- **Dataset**: 5,000 balanced samples (2,500 human-written and 2,500 AI-generated) — *custom-collected and created by the author for this project*
-- **Models Trained**: Logistic Regression, Random Forest, Naive Bayes, Calibrated Linear SVC
-- **Text Preprocessing**: Lowercasing, punctuation cleanup, and TF-IDF vectorization
-- **Evaluation Metrics**: Confusion Matrices, ROC Curves, AUC Scores, Classification Reports
-- **Visualizations**: Word Clouds, Model Accuracy Bar Charts, ROC Curve Comparisons, Feature Importance
-- **Output**: Saved model with `joblib` in `/model/text_classifier_5000.joblib`
+## Key Highlights
 
-## Results
+- **Custom Dataset**: 5,000 samples (2,500 human + 2,500 AI-generated), curated and balanced by the author.
+- **Models Trained**:
+  - Logistic Regression (Top performer: **100% accuracy**)
+  - Random Forest
+  - Multinomial Naive Bayes
+  - Calibrated Linear SVC
+- **Text Preprocessing**:
+  - Lowercasing
+  - Punctuation removal
+  - Token cleaning
+- **Evaluation Metrics**:
+  - Confusion Matrices
+  - ROC Curves & AUC Scores
+  - Precision, Recall, F1-Score
+- **Visual Interpretations**:
+  - Word Clouds
+  - Feature Importance Bar Charts
+  - Model Accuracy Comparison
+- **Deployment Ready**:
+  - Final model serialized with `joblib`
+  - Predicts new input instantly
 
-- **Logistic Regression** achieved **100% test accuracy**, followed closely by Calibrated Linear SVC (0.998), Naive Bayes (0.997), and Random Forest (0.992).
-- **Feature Importance**: TF-IDF weights revealed words most indicative of AI vs. human writing.
-- **ROC Curves & AUC Scores** validated model separability and classification power.
-- **Classification Reports** confirmed high precision, recall, and F1-scores across all models.
+---
 
- *Note: Perfect accuracy reflects the high separability of the dataset and strong TF-IDF features. The project is designed for educational and experimental exploration._
+## Results Summary
+
+| Model               | Accuracy | AUC Score |
+|--------------------|----------|-----------|
+| Logistic Regression| **1.000**| 1.00      |
+| Linear SVC         | 0.998    | -         |
+| Naive Bayes        | 0.997    | 1.00      |
+| Random Forest      | 0.992    | 1.00      |
+
+- **TF-IDF feature weights** revealed strong interpretability.
+- **Words like “industry”, “AI”, “intelligence”** were predictive of AI text.
+- **Words like “my”, “was”, “weather”** were highly human-like.
+- ROC curves confirmed excellent model separability.
+
+*Note: Perfect accuracy is expected due to the high separability and structured nature of the dataset (intended for educational use).*
 
 ---
 
