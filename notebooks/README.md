@@ -53,7 +53,7 @@ This project builds a binary text classification system to distinguish between *
 ```
 HUMAN_VS_AI_CUSTOM/
 ├── data/
-│   └── custom_dataset_5000.csv             # Final cleaned and labeled dataset (2,500 Human + 2,500 AI samples)
+│   └── custom_dataset_5000.csv           # Final cleaned and labeled dataset (2,500 Human + 2,500 AI samples)
 ├── model/
 │   ├── model_info.txt                    # Description of model version and training details
 │   └── text_classifier_5000.joblib       # Serialized trained model for deployment
