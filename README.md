@@ -1,8 +1,9 @@
+
+# Human vs AI Text Classifier
+
 <p align="center">
   <img src="Thumbnail_AI Text Classifier.png" alt="Project Thumbnail" width="600"/>
 </p>
-
-# Human vs AI Text Classifier
 
 This project builds a binary text classification system to distinguish between **human-written** and **AI-generated** text using a custom-labeled dataset. By combining **TF-IDF vectorization** with multiple machine learning models, it captures subtle linguistic patterns and style differences across writing sources.
 
